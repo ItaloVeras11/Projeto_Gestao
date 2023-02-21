@@ -27,6 +27,14 @@ Route::prefix('/app')->group(function(){
     Route::get('/produtos', function() { return 'produtos';});
 });
 
+Route::get('/rota1', function(){
+    echo 'Rota 1';
+})->name('site.rota1');
+
+Route::get('/rota2', function(){
+    echo 'Rota 2';
+})->name('site.rota2');
+
 
 
 

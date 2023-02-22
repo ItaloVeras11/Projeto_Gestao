@@ -27,13 +27,11 @@ Route::prefix('/app')->group(function(){
     Route::get('/produtos', function() { return 'produtos';});
 });
 
-Route::get('/rota1', function(){
-    echo 'Rota 1';
-})->name('site.rota1');
+Route::get('/teste', [TesteController::class, 'teste'])->name('teste');
 
-Route::get('/rota2', function(){
-    echo 'Rota 2';
-})->name('site.rota2');
+Route::fallback(function(){
+    echo 'A rota acessada não existe. <a href= "'.route('site.index').'"> Clique Aqui </a>';
+});
 
 
 

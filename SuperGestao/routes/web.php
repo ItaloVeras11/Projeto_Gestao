@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContatoController;
+use App\Http\Controllers\FornecedoresController;
 use App\Http\Controllers\PrincipalController;
 use App\Http\Controllers\SobreNosController;
 use App\Http\Controllers\TesteController;
@@ -24,7 +25,7 @@ Route::get('/login', function (){ return 'login';})->name('site.login');
 
 Route::prefix('/app')->group(function(){
     Route::get('/clientes', function() { return 'clientes';});
-    Route::get('/fornecedores', function() { return 'fornecedores';});
+    Route::get('/fornecedores', [FornecedoresController::class, 'index'])->name('app.fornecedores');
     Route::get('/produtos', function() { return 'produtos';});
 });
 

@@ -13,7 +13,6 @@ class FornecedoresController extends Controller
                 'nome' => 'Fornecedor 1',
                 'status' => 'N',
                 'cnpj' => ''
-
             ],
 
             1 => [
@@ -21,9 +20,8 @@ class FornecedoresController extends Controller
                 'status' => 'S'
 
             ]
-        
         ];
-
+        
         return view('app.fornecedores.index', compact('forecedores'));
     }
 }

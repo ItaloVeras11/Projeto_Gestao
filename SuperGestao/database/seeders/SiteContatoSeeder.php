@@ -2,9 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\SiteContato;
+
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\SiteContato;
 
 
 class SiteContatoSeeder extends Seeder
@@ -16,6 +17,7 @@ class SiteContatoSeeder extends Seeder
      */
     public function run()
     {
+        /*
         $contato = new SiteContato();
         $contato->nome = 'Sistema SG';
         $contato->telefone = '(11) 99999-8888';
@@ -23,6 +25,11 @@ class SiteContatoSeeder extends Seeder
         $contato->motivo_contato = 1;
         $contato->mensagem = 'Seja Bem Vindo ao Sistema Super Gestao';
         $contato->save();
+        */
+
+        SiteContato::factory()->count(100)->create();
+
+
 
     }
 }

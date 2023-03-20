@@ -29,4 +29,8 @@ class ContatoController extends Controller
 
  
     }
+
+    public function salvar(Request $request){
+        dd($request);
+    }
 }

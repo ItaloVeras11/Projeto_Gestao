@@ -20,10 +20,13 @@ class ContatoController extends Controller
 
         $contato->save();
         */
-        $contato = new SiteContato();
-        $contato->create($request->all());
-        //$contato->save();
-
+        if(!(empty($request->all()))){
+            $contato = new SiteContato();
+            $contato->create($request->all());
+        }
+ 
         return view('site.contato');
+
+ 
     }
 }

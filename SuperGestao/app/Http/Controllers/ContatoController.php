@@ -10,7 +10,7 @@ class ContatoController extends Controller
 {
     public function contato(Request $request){
         //dd($request);
-
+        /*
         $contato = new SiteContato();
         $contato->nome = $request->input('nome');
         $contato->telefone = $request->input('telefone');
@@ -19,7 +19,8 @@ class ContatoController extends Controller
         $contato->mensagem = $request->input('mensagem');
 
         $contato->save();
-
+        */
+        
         return view('site.contato');
     }
 }

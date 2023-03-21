@@ -16,14 +16,7 @@
         <option value="3">Reclamação</option>
     </select>
     <br>
-    <textarea name="mensagem" class="{{ $classe }}">
-        @if (old('mensagem') != '')
-            {{ old('mensagem') }}
-
-        @else
-            Preencha aqui a sua mensagem
-        @endif
-    </textarea>
+    <textarea name="mensagem" class="{{ $classe }}">{{ (old('mensagem') != '') ? old('mensagem') : 'Preencha aqui a sua mensagem'}} </textarea>
     <br>
     <button type="submit" class="{{ $classe }}">ENVIAR</button>
 </form>

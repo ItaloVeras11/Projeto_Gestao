@@ -39,8 +39,8 @@ class ContatoController extends Controller
             /*'telefone' => 'required',
             'email' => 'required',
             'motivo_contato' => 'required',
-            'mensagem' => 'required'
             */
+            'mensagem' => 'required|max:2000'
         ]);
         //SiteContato::create($request->all());
     }

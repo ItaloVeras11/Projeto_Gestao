@@ -36,6 +36,16 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        //Criar a coluna motivo_contato e refazendo a fk
+        Schema::table('site_contatos', function (Blueprint $table) {
+            $table->integer('motivo_contato');
+            $table->dropforeign('site_contatos_motivo_contatos_id_foreign');
+        
+        });
+
+        //Atribuindo motivo_contatos_id para a coluna motivo_contato
+        DB::statement('update site_contatos set motivo_contatos_id = motivo_contato');
+
+        
     }
 };

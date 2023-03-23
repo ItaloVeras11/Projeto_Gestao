@@ -44,8 +44,12 @@ return new class extends Migration
         });
 
         //Atribuindo motivo_contatos_id para a coluna motivo_contato
-        DB::statement('update site_contatos set motivo_contatos_id = motivo_contato');
+        DB::statement('update site_contatos set motivo_contatos = motivo_contato_id');
 
+        //Removendo a coluna motivo_contatos_id
+        Schema::table('site_contatos', function (Blueprint $table) {
+            $table->dropColumn('motivo_contatos_id');
+        });
         
     }
 };

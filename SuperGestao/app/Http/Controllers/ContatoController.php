@@ -39,7 +39,7 @@ class ContatoController extends Controller
             'nome' => 'required|min:3|max:40', //Nomes Com No Minimo 3 characteres
             'telefone' => 'required',
             'email' => 'email',
-            'motivo_contato' => 'required',
+            'motivo_contatos_id' => 'required',
             'mensagem' => 'required|max:2000'
         ]);
         

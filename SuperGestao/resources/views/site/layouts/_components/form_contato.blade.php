@@ -26,9 +26,12 @@
                 {{ $motivo_contatos->motivo_contato }}</option>
         @endforeach
 
+        {{ $errors->has('motivo_contatos_id') ? $errors->first('motivo_contatos_id') : '' }}
+
     </select>
     <br>
     <textarea name="mensagem" class="{{ $classe }}">{{ old('mensagem') != '' ? old('mensagem') : 'Preencha aqui a sua mensagem' }} </textarea>
+    {{ $errors->has('mensagem') ? $errors->first('mensagem') : '' }}
     <br>
     <button type="submit" class="{{ $classe }}">ENVIAR</button>
 </form>

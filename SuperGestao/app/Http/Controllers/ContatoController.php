@@ -50,7 +50,10 @@ class ContatoController extends Controller
             'nome.unique' => 'O nome informado ja esta em uso',
             'telefone.required' => 'O campo telefone precisa ser preenchido',
 
-            'required' => 'O campo :attribute deve ser preenchido'
+
+            'email.email' => 'O campo é Obrigatorio',
+            'mensagem.max' => 'A mensagem deve ter no maximo 2000 caracteres',
+            'required' => 'O campo :attribute deve ser preenchido',
 
         ]
     );

@@ -47,7 +47,11 @@ class ContatoController extends Controller
             'nome.required' => 'O campo nome precisa ser preenchido',
             'nome.min' => 'O campo nome precisa ter no minimo 3 caracteres',
             'nome.max' => 'O campo nome deve ter no maximo 40 characteres',
-            'nome.unique' => 'O nome informado ja esta em uso'
+            'nome.unique' => 'O nome informado ja esta em uso',
+            'telefone.required' => 'O campo telefone precisa ser preenchido',
+
+            'required' => 'O campo :attribute deve ser preenchido'
+
         ]
     );
         

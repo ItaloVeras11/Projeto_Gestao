@@ -22,15 +22,12 @@
 
         @foreach ($motivo_contato as $key => $motivo_contatos)
             <option value="{{ $motivo_contatos->id }}"
-                {{ old('motivo_contatos_id') == $motivo_contatos->id ? 'selected' : '' }}>
-                {{ $motivo_contatos->motivo_contato }}</option>
+                {{ old('motivo_contatos_id') == $motivo_contatos->id ? 'selected' : '' }}>{{ $motivo_contatos->motivo_contato }}</option>
         @endforeach
-
-        {{ $errors->has('motivo_contatos_id') ? $errors->first('motivo_contatos_id') : '' }}
-
     </select>
+    {{ $errors->has('motivo_contatos_id') ? $errors->first('motivo_contatos_id') : '' }}
     <br>
-    <textarea name="mensagem" class="{{ $classe }}">{{ old('mensagem') != '' ? old('mensagem') : 'Preencha aqui a sua mensagem' }} </textarea>
+    <textarea name="mensagem" class="{{ $classe }}">{{ (old('mensagem') != '') ? old('mensagem') : 'Preencha aqui a sua mensagem' }}</textarea>
     {{ $errors->has('mensagem') ? $errors->first('mensagem') : '' }}
     <br>
     <button type="submit" class="{{ $classe }}">ENVIAR</button>

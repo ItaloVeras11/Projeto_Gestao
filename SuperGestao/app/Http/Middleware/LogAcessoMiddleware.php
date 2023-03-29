@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use App\Models\LogAcesso;
 
 class LogAcessoMiddleware
 {
@@ -16,6 +17,7 @@ class LogAcessoMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
+        LogAcesso::create(['log' => 'IP xyz requisitou a rota abcd']);
         return Response('Chegamos no middleware ');
     }
 }

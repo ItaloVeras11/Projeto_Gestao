@@ -26,7 +26,7 @@ Route::get('/login', function (){ return 'login';})->name('site.login');
 Route::post('/contato', [ContatoController::class, 'salvar'])->name('site.contato');
 
 
-Route::middleware('autenticacao')->prefix('/app')->group(function(){
+Route::middleware('autenticacao:ldap')->prefix('/app')->group(function(){
     Route::get('/clientes', function() { return 'clientes';});
     Route::get('/fornecedores', [FornecedoresController::class, 'index'])->name('app.fornecedores');
     Route::get('/produtos', function() { return 'produtos';});

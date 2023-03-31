@@ -24,6 +24,8 @@ class LogAcessoMiddleware
         $resposta = $next($request);
 
         $resposta->setStatusCode(201, 'Status e Texto Modificados');
+
+        return $resposta;
         
         //return $next($request);
         //return Response('Chegamos no middleware ');

@@ -17,6 +17,7 @@ class AutenticacaoMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
+        //Verifica se o usuario possui acesso a rota
         if(true){
             return $next($request);
         } else {

@@ -28,8 +28,8 @@ Route::post('/contato', [ContatoController::class, 'salvar'])->name('site.contat
 
 Route::prefix('/app')->group(function(){
     Route::get('/clientes', function() { return 'clientes';})->middleware('log.acesso', 'autenticacao');
-    Route::get('/fornecedores', [FornecedoresController::class, 'index'])->name('app.fornecedores');
-    Route::get('/produtos', function() { return 'produtos';});
+    Route::get('/fornecedores', [FornecedoresController::class, 'index'])->name('app.fornecedores')->middleware('log.acesso', 'autenticacao');
+    Route::get('/produtos', function() { return 'produtos';})->middleware('log.acesso', 'autenticacao');
 });
 
 Route::get('/teste{p1}/{p2}', [TesteControlleroller::class, 'teste'])->name('teste');

@@ -13,7 +13,9 @@
         </div>
 
         <div class="informacao-pagina">
+            <form action="{{ route('site.login') }}" method="post">
             
+            </form>
         </div>
     </div>
 

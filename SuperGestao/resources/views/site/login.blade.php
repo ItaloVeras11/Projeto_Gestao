@@ -9,16 +9,11 @@
 
     <div class="conteudo-pagina">
         <div class="titulo-pagina">
-            <h1>Entre em contato conosco</h1>
+            <h1>Login</h1>
         </div>
 
         <div class="informacao-pagina">
-            <div class="contato-principal">
-                @component('site.layouts._components.form_contato', ['classe' => 'borda-preta', 'motivo_contato' => $motivo_contato])
-                    <p>A nossa equipe analisara a sua mensagem o mais breve possivel</p>
-                    <p>O nosso tempo medio e´de 48 horas</p>
-                @endcomponent
-            </div>
+            
         </div>
     </div>
 

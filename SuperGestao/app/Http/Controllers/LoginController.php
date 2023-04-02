@@ -11,6 +11,10 @@ class LoginController extends Controller
     }
 
     public function autenticar(){
-        return 'Chegamos ate aqui';
+        
+        $regras = [
+            'usuario' => 'email',
+            'senha' => 'required'
+        ];
     }
 }

@@ -10,11 +10,18 @@ class LoginController extends Controller
         return view('site.login', ['titulo' => 'Login']);
     }
 
-    public function autenticar(){
+    public function autenticar(Request $request){
         
         $regras = [
             'usuario' => 'email',
             'senha' => 'required'
         ];
+
+        $fedback = [
+            'usuario.email' => 'O campo usuario (e-mail) é obrigatorio',
+            'senha.required' => 'O campo senha é obrigatorio'
+        ];
+
+        $request->validate($regras, $fedback);
     }
 }

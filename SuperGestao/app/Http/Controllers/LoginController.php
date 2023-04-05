@@ -36,7 +36,7 @@ class LoginController extends Controller
         if(isset($usuario->name)){
             echo 'Usuario existe';
         } else {
-            echo 'Usuario não Existe';
+            echo redirect()->route('site.login', ['erro'=>1]);
         }
     }
 }

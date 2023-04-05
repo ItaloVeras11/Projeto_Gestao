@@ -9,7 +9,13 @@ class LoginController extends Controller
 {
     public function index(Request $request){
 
-        $erro = $request->get('erro');
+        $erro = '';
+        
+        if($request->get('erro') == 1){
+          $erro = 'Usuario ou Senha nao existe';  
+        }
+
+
         return view('site.login', ['titulo' => 'Login', 'erro' => $erro]);
     }
 

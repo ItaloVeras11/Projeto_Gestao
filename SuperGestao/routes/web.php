@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PrincipalController::class, 'principal'])->name('site.index')->middleware('log.acesso');
 Route::get('/sobre-nos', [SobreNosController::class, 'sobreNos'])->name('site.sobrenos');
 Route::get('/contato', [ContatoController::class, 'contato'])->name('site.contato');
-Route::get('/login', [LoginController::class, 'index'])->name('site.login');
+Route::get('/login/{erro?}', [LoginController::class, 'index'])->name('site.login');
 Route::post('/login', [LoginController::class, 'autenticar'])->name('site.login');
 Route::post('/contato', [ContatoController::class, 'salvar'])->name('site.contato');
 

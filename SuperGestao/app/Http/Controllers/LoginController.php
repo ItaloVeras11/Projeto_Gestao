@@ -7,7 +7,9 @@ use App\Models\User;
 
 class LoginController extends Controller
 {
-    public function index(){
+    public function index(Request $request){
+
+        $erro = $request->get('erro');
         return view('site.login', ['titulo' => 'Login']);
     }
 

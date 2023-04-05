@@ -10,7 +10,7 @@ class LoginController extends Controller
     public function index(Request $request){
 
         $erro = $request->get('erro');
-        return view('site.login', ['titulo' => 'Login']);
+        return view('site.login', ['titulo' => 'Login', 'erro' => $erro]);
     }
 
     public function autenticar(Request $request){

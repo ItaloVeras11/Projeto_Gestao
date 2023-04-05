@@ -26,6 +26,8 @@
             
              </form>
 
+             {{ isset($erro) && $erro != '' ? $erro : '' }}
+
             </div>
         </div>
     </div>

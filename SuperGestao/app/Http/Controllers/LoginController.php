@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Psy\TabCompletion\Matcher\FunctionsMatcher;
 
 class LoginController extends Controller
 {
@@ -56,5 +57,9 @@ class LoginController extends Controller
         } else {
             echo redirect()->route('site.login', ['erro'=>1]);
         }
+    }
+
+    public function sair(){
+        echo 'Sair';
     }
 }

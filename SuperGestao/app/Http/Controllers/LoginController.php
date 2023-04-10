@@ -42,7 +42,7 @@ class LoginController extends Controller
         $usuario = $user->where('email', $email)->where('password', $password)->get()->first();
 
         if(isset($usuario->name)){
-            echo 'Usuario existe';
+            dd($usuario);
         } else {
             echo redirect()->route('site.login', ['erro'=>1]);
         }

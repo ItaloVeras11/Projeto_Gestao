@@ -29,9 +29,11 @@ Route::post('/contato', [ContatoController::class, 'salvar'])->name('site.contat
 
 
 Route::middleware('autenticacao:padrao,visitante')->prefix('/app')->group(function(){
-    Route::get('/clientes', function() { return 'clientes';})->name('app.clientes');
-    Route::get('/fornecedores', [FornecedoresController::class, 'index'])->name('app.fornecedores');
-    Route::get('/produtos', function() { return 'produtos';});
+    Route::get('/home', function() {return 'Clientes'; })->name('app.home');
+    Route::get('/sair', function() {return 'Clientes'; })->name('app.sair');
+    Route::get('/cliente', function() { return 'clientes';})->name('app.cliente');
+    Route::get('/fornecedore', [FornecedoresController::class, 'index'])->name('app.fornecedore');
+    Route::get('/produto', function() { return 'produtos';})->name('app.produto');
 });
 
 Route::get('/teste{p1}/{p2}', [TesteControlleroller::class, 'teste'])->name('teste');

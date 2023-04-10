@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ContatoController;
 use App\Http\Controllers\FornecedoresController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PrincipalController;
 use App\Http\Controllers\SobreNosController;
@@ -29,11 +31,11 @@ Route::post('/contato', [ContatoController::class, 'salvar'])->name('site.contat
 
 
 Route::middleware('autenticacao:padrao,visitante')->prefix('/app')->group(function(){
-    Route::get('/home', function() {return 'Clientes'; })->name('app.home');
-    Route::get('/sair', function() {return 'Clientes'; })->name('app.sair');
-    Route::get('/cliente', function() { return 'clientes';})->name('app.cliente');
+    Route::get('/home', [HomeController::class, 'index'])->name('app.home');
+    Route::get('/sair', [LoginController::class, 'sair'])->name('app.sair');
+    Route::get('/cliente', [ClienteController::class, 'index'])->name('app.cliente');
     Route::get('/fornecedore', [FornecedoresController::class, 'index'])->name('app.fornecedore');
-    Route::get('/produto', function() { return 'produtos';})->name('app.produto');
+    Route::get('/produto', [ProdutoController::class, 'index'])->name('app.produto');
 });
 
 Route::get('/teste{p1}/{p2}', [TesteControlleroller::class, 'teste'])->name('teste');

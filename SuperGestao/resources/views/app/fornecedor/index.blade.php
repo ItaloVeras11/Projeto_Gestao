@@ -24,6 +24,7 @@
                     <input type="text" name="site" id="" placeholder="Site" class="borda-preta">
                     <input type="text" name="uf" id="" placeholder="UF" class="borda-preta">
                     <input type="text" name="email" id="" placeholder="E-mail" class="borda-preta">
+                    <button type="submit" class="borda-preta">Pesquisar</button>
                 </form>
             </div>
 

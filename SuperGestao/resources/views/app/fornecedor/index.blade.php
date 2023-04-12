@@ -20,6 +20,7 @@
 
             <div style="width: 30%; margin-left: auto; margin-right: auto;">
                 <form action="" method="post">
+                    <input type="text" name="nome" id="" placeholder="Nome" class="borda-preta">
                     
                 </form>
             </div>

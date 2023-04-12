@@ -18,7 +18,11 @@
 
         <div class="informacao-pagina">
 
-            <div style="width: 30%; margin-left: auto; margin-right: auto;"></div>
+            <div style="width: 30%; margin-left: auto; margin-right: auto;">
+                <form action="" method="post">
+                    
+                </form>
+            </div>
 
         </div>
 

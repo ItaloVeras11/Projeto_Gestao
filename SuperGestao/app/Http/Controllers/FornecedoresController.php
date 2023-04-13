@@ -9,4 +9,8 @@ class FornecedoresController extends Controller
     public function index(){
         return view('app.fornecedor.index');
     }
+
+    public function listar(){
+        return view('app.fornecedor.listar');
+    }
 }

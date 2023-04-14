@@ -12,14 +12,14 @@
         <div class="menu">
             <ul>
                 <li><a href="{{ route('app.fornecedor.adicionar') }}">Novo</a></li>
-                <li><a href="">Consulta</a></li>
+                <li><a href="{{ route('app.fornecedor') }}">Consulta</a></li>
             </ul>
         </div>
 
         <div class="informacao-pagina">
 
             <div style="width: 30%; margin-left: auto; margin-right: auto;">
-                <form action="{{ route('app.fornecedor.listar')}}" method="post">
+                <form action="{{ route('app.fornecedor.listar') }}" method="post">
                     @csrf
                     <input type="text" name="nome" id="" placeholder="Nome" class="borda-preta">
                     <input type="text" name="site" id="" placeholder="Site" class="borda-preta">

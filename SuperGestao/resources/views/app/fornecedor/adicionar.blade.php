@@ -22,9 +22,17 @@
                 <form action="{{ route('app.fornecedor.adicionar')}}" method="post">
                     @csrf
                     <input type="text" name="nome" id="" placeholder="Nome" class="borda-preta">
+                    {{ $errors->has('nome') ? $erros->first('nome') : ''}}
+
                     <input type="text" name="site" id="" placeholder="Site" class="borda-preta">
+                    {{ $errors->has('site') ? $erros->first('site') : ''}}
+
                     <input type="text" name="uf" id="" placeholder="UF" class="borda-preta">
+                    {{ $errors->has('uf') ? $erros->first('uf') : ''}}
+
                     <input type="text" name="email" id="" placeholder="E-mail" class="borda-preta">
+                    {{ $errors->has('email') ? $erros->first('email') : ''}}
+
                     <button type="submit" class="borda-preta">Cadastrar</button>
                 </form>
             </div>

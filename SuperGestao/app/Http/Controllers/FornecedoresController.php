@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Fornecedor;
 use Illuminate\Http\Request;
 
 class FornecedoresController extends Controller
@@ -36,5 +37,11 @@ class FornecedoresController extends Controller
             $request->validate($regras, $feedback);
         }
         return view('app.fornecedor.adicionar');
+
+        $fornecedor = new Fornecedor();
+
+        $fornecedor->create('app.fornecedor.adicionar');
+
+        
     }
 }

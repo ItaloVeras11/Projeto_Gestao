@@ -17,7 +17,7 @@ class FornecedoresController extends Controller
     public function adicionar(Request $request){
         
         if($request->inut('_token') != ''){
-            $reqgras = [
+            $regras = [
                 'nome' => 'required|min:3|max:40',
                 'site' => 'required|',
                 'uf' => 'required|min:2|max:2',
@@ -32,6 +32,8 @@ class FornecedoresController extends Controller
                 'uf.max' => 'O campo uf deve ter no maximo 2 caracteres',
                 'email.emial' => 'O campo email nao foi preenchido corretamente'
             ];
+
+            $request->validate($regras, $feedback);
         }
         return view('app.fornecedor.adicionar');
     }

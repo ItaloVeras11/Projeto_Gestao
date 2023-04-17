@@ -11,7 +11,8 @@ class FornecedoresController extends Controller
         return view('app.fornecedor.index');
     }
 
-    public function listar(){
+    public function listar(Request $request){
+        $fornecedores = Fornecedor::where();
         return view('app.fornecedor.listar');
     }
 

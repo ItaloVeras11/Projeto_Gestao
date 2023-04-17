@@ -14,7 +14,11 @@ class FornecedoresController extends Controller
         return view('app.fornecedor.listar');
     }
 
-    public function adicionar(){
+    public function adicionar(Request $request){
+        
+        if($request->inut('_token') != ''){
+            
+        };
         return view('app.fornecedor.adicionar');
     }
 }

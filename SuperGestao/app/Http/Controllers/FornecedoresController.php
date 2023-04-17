@@ -28,6 +28,8 @@ class FornecedoresController extends Controller
                 'required' => 'O campo :attribute deve ser preenchido',
                 'nome.min' => 'O campo nome deve ter no minimo 3 caracteres',
                 'nome.miax' => 'O campo nome deve ter no maximo 40 caracteres',
+                'uf.min' => 'O campo uf deve ter no minimo 2 caracteres',
+                'uf.max' => 'O campo uf deve ter no maximo 2 caracteres',
             ];
         }
         return view('app.fornecedor.adicionar');

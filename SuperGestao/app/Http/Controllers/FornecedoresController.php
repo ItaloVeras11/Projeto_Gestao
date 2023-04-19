@@ -53,7 +53,6 @@ class FornecedoresController extends Controller
     }
 
     public function editar($id){
-        echo $id;
         $fornecedor = Fornecedor::find($id);
     }
 }

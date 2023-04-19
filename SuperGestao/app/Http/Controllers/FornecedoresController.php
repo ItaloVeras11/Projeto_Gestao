@@ -54,5 +54,7 @@ class FornecedoresController extends Controller
 
     public function editar($id){
         $fornecedor = Fornecedor::find($id);
+
+        return view('app.fornecedor.adicionar', ['fornecedor' => $fornecedor]);
     }
 }

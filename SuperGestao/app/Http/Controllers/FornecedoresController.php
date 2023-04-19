@@ -48,7 +48,11 @@ class FornecedoresController extends Controller
 
         if($request->inut('_token') != '' && $request->input('id') != ''){
             $fornecedor = Fornecedor::find($request->input('id'));
-            $fornecedor->update($request->all());
+            $update = $fornecedor->update($request->all());
+
+            if($update){
+                echo 'Atualizado';
+            }
         }
 
         return view('app.fornecedor.adicionar');

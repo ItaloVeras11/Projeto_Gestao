@@ -17,6 +17,7 @@
         </div>
 
         <div class="informacao-pagina">
+            {{ $msg ?? '' }}
 
             <div style="width: 30%; margin-left: auto; margin-right: auto;">
                 <form action="{{ route('app.fornecedor.adicionar')}}" method="post">

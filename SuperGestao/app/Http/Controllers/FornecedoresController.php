@@ -24,7 +24,9 @@ class FornecedoresController extends Controller
 
     public function adicionar(Request $request){
         
-        if($request->inut('_token') != ''){
+        
+
+        if($request->inut('_token') != '' && $request->input('id') == ''){
             $regras = [
                 'nome' => 'required|min:3|max:40',
                 'site' => 'required|',
@@ -43,6 +45,11 @@ class FornecedoresController extends Controller
 
             $request->validate($regras, $feedback);
         }
+
+        if($request->inut('_token') != '' && $request->input('id') != ''){
+            $fornecedor = Fornecedor::find($request->input('id'));
+        }
+
         return view('app.fornecedor.adicionar');
 
         $fornecedor = new Fornecedor();

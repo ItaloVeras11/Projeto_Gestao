@@ -51,4 +51,8 @@ class FornecedoresController extends Controller
 
         
     }
+
+    public function editar(){
+        echo 'Editar';
+    }
 }

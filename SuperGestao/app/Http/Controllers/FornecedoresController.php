@@ -52,6 +52,8 @@ class FornecedoresController extends Controller
 
             if($update){
                 echo 'Atualizado';
+            }else{
+                echo 'Nao atualizado';
             }
         }
 

@@ -55,6 +55,8 @@ class FornecedoresController extends Controller
             }else{
                 echo 'Nao atualizado';
             }
+
+            return redirect()->route('app.fornecedor.adicionar');
         }
 
         return view('app.fornecedor.adicionar');

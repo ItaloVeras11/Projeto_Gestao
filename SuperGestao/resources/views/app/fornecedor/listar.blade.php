@@ -59,7 +59,9 @@
 
                 <br>
 
-                {{ $fornecedores->count() }} - Total de Registros por Pagina
+                {{ $fornecedores->firstItem() }} - Numero do primeiro registro da pagina
+
+                <br>
 
 
             </div>

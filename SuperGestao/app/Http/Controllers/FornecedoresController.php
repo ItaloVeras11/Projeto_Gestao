@@ -65,7 +65,6 @@ class FornecedoresController extends Controller
 
         $fornecedor->create('app.fornecedor.adicionar');
 
-        
     }
 
     public function editar($id){

@@ -76,7 +76,7 @@ class FornecedoresController extends Controller
 
     public function excluir($id){
         Fornecedor::find($id)->delete();
-        Fornecedor::find($id)->forceDelete();
+        //Fornecedor::find($id)->forceDelete();
 
         return redirect()->route('app.fornecedor');
     }

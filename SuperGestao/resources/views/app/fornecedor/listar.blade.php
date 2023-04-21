@@ -55,9 +55,11 @@
 
                 <br>
 
-                {{ $fornecedores->count() }} - Total de Registros por Pagina
+                {{ $fornecedores->total() }} - Total de Registros da Consulta
 
-                br
+                <br>
+
+                {{ $fornecedores->count() }} - Total de Registros por Pagina
 
 
             </div>

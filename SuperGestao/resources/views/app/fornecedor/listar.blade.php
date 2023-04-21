@@ -49,6 +49,10 @@
 
                 {{ $fornecedores->appends($request)->links() }}
 
+                <br>
+
+                {{ $fornecedores->count() }} - Total de Registros por Pagina
+
             </div>
 
         </div>

@@ -63,6 +63,10 @@
 
                 <br>
 
+                {{ $fornecedores->lastItem() }} - Numero do Ultimo registro da pagina 
+
+                <br>
+
 
             </div>
 

@@ -73,4 +73,8 @@ class FornecedoresController extends Controller
 
         return view('app.fornecedor.adicionar', ['fornecedor' => $fornecedor]);
     }
+
+    public function excluir($id){
+        echo 'Remover';
+    }
 }

@@ -67,6 +67,8 @@
 
                 <br>
 
+                Exibindo {{ $fornecedores->count() }} fornecedores de {{ $fornecedores->total() }}
+
 
             </div>
 

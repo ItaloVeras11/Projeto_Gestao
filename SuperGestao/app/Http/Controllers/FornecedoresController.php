@@ -75,6 +75,8 @@ class FornecedoresController extends Controller
     }
 
     public function excluir($id){
-        echo 'Remover';
+        Fornecedor::find($id)->delete();
+
+        
     }
 }

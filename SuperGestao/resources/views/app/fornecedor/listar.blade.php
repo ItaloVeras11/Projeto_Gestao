@@ -53,6 +53,13 @@
 
                 {{ $fornecedores->count() }} - Total de Registros por Pagina
 
+                <br>
+
+                {{ $fornecedores->count() }} - Total de Registros por Pagina
+
+                br
+
+
             </div>
 
         </div>

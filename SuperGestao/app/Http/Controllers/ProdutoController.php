@@ -14,7 +14,10 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-        //
+        $produtos = Produto::paginate(2);
+
+    
+    return view('app.fornecedor.listar', ['fornecedores' =>$fornecedores, 'request' => $request->all() ]);
     }
 
     /**

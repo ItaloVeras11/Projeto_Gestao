@@ -37,9 +37,9 @@
                         @foreach ($produtos as $produto)
                         <tr>
                             <td>{{ $produto->nome }}</td>
-                            <td>{{ $produto->site }}</td>
-                            <td>{{ $produto->uf }}</td>
-                            <td>{{ $produto->email }}</td>
+                            <td>{{ $produto->descricao }}</td>
+                            <td>{{ $produto->peso }}</td>
+                            <td>{{ $produto->unidade_id }}</td>
                             <td><a href="{{ route('app.fornecedor.excluir', $fornecedor->id) }}"> Excluir </a></td>
                             <td><a href="{{ route('app.fornecedor.editar', $fornecedor->id) }}"> Editar</a></td>
                         </tr>

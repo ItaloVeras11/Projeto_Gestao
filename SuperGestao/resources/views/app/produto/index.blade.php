@@ -24,9 +24,9 @@
                     <thead>
                         <tr>
                             <th>Nome</th>
-                            <th>Site</th>
-                            <th>UF</th>
-                            <th>E-mail</th>
+                            <th>Descriçao</th>
+                            <th>Peso</th>
+                            <th>Unidade - ID</th>
                             <th></th>
                             <th></th>
                         </tr>

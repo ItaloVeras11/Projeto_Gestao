@@ -26,13 +26,13 @@
                     <input type="text" name="nome" value="" id="" placeholder="Nome" class="borda-preta">
                     
 
-                    <input type="text" name="site" value="" id="" placeholder="Site" class="borda-preta">
+                    <input type="text" name="descricao" value="" id="" placeholder="Site" class="borda-preta">
                     
 
-                    <input type="text" name="uf" value="" id="" placeholder="UF" class="borda-preta">
+                    <input type="text" name="peso" value="" id="" placeholder="UF" class="borda-preta">
                     
 
-                    <input type="text" name="email" value="" id="" placeholder="E-mail" class="borda-preta">
+                    <input type="text" name="unidade_id" value="" id="" placeholder="E-mail" class="borda-preta">
                     
 
                     <button type="submit" class="borda-preta">Cadastrar</button>

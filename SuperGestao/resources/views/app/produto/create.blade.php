@@ -36,6 +36,8 @@
 
                         <option>-- Selecione Unidade de Medida --</option>
 
+                        <option value="1"> Unidade </option>
+
                    </select>
                     
 

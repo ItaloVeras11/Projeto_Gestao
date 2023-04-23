@@ -32,7 +32,11 @@
                     <input type="text" name="peso" value="" id="" placeholder="UF" class="borda-preta">
                     
 
-                    <input type="text" name="unidade_id" value="" id="" placeholder="E-mail" class="borda-preta">
+                   <select name="unidade_id" >
+
+                        <option>-- Selecione Unidade de Medida --</option>
+
+                   </select>
                     
 
                     <button type="submit" class="borda-preta">Cadastrar</button>

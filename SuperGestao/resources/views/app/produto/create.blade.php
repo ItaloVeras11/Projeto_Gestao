@@ -23,16 +23,16 @@
                 <form action="" method="post">
                     
                     @csrf
-                    <input type="text" name="nome" value="{{$fornecedor->nome ?? old('nome') }}" id="" placeholder="Nome" class="borda-preta">
+                    <input type="text" name="nome" value="" id="" placeholder="Nome" class="borda-preta">
                     
 
-                    <input type="text" name="site" value="{{ $fornecedor->site ??  old('site') }}" id="" placeholder="Site" class="borda-preta">
+                    <input type="text" name="site" value="" id="" placeholder="Site" class="borda-preta">
                     
 
-                    <input type="text" name="uf" value="{{ $fornecedor->uf ??  old('uf') }}" id="" placeholder="UF" class="borda-preta">
+                    <input type="text" name="uf" value="" id="" placeholder="UF" class="borda-preta">
                     
 
-                    <input type="text" name="email" value="{{ $fornecedor->email ??  old('email') }}" id="" placeholder="E-mail" class="borda-preta">
+                    <input type="text" name="email" value="" id="" placeholder="E-mail" class="borda-preta">
                     
 
                     <button type="submit" class="borda-preta">Cadastrar</button>

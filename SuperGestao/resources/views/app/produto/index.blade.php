@@ -67,7 +67,7 @@
 
                 <br>
 
-                Exibindo {{ $fornecedores->count() }} fornecedores de {{ $fornecedores->total() }} de {{ $fornecedores->firstItem() }} a {{ $fornecedores->lastItem() }}
+                Exibindo {{ $produtos->count() }} produtos de {{ $produtos->total() }} de {{ $produtos->firstItem() }} a {{ $produtos->lastItem() }}
 
 
             </div>

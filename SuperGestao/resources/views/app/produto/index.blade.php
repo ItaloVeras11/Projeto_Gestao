@@ -47,23 +47,23 @@
                     </tbody>
                 </table>
 
-                {{ $fornecedores->appends($request)->links() }}
+                {{ $produtos->appends($request)->links() }}
 
                 <br>
 
-                {{ $fornecedores->count() }} - Total de Registros por Pagina
+                {{ $produtos->count() }} - Total de Registros por Pagina
 
                 <br>
 
-                {{ $fornecedores->total() }} - Total de Registros da Consulta
+                {{ $produtos->total() }} - Total de Registros da Consulta
 
                 <br>
 
-                {{ $fornecedores->firstItem() }} - Numero do primeiro registro da pagina
+                {{ $produtos->firstItem() }} - Numero do primeiro registro da pagina
 
                 <br>
 
-                {{ $fornecedores->lastItem() }} - Numero do Ultimo registro da pagina 
+                {{ $produtos->lastItem() }} - Numero do Ultimo registro da pagina 
 
                 <br>
 

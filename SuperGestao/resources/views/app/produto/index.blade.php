@@ -34,12 +34,12 @@
 
 
                     <tbody>
-                        @foreach ($fornecedores as $fornecedor)
+                        @foreach ($produtos as $produto)
                         <tr>
-                            <td>{{ $fornecedor->nome }}</td>
-                            <td>{{ $fornecedor->site }}</td>
-                            <td>{{ $fornecedor->uf }}</td>
-                            <td>{{ $fornecedor->email }}</td>
+                            <td>{{ $produto->nome }}</td>
+                            <td>{{ $produto->site }}</td>
+                            <td>{{ $produto->uf }}</td>
+                            <td>{{ $produto->email }}</td>
                             <td><a href="{{ route('app.fornecedor.excluir', $fornecedor->id) }}"> Excluir </a></td>
                             <td><a href="{{ route('app.fornecedor.editar', $fornecedor->id) }}"> Editar</a></td>
                         </tr>

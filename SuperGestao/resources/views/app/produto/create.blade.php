@@ -11,7 +11,7 @@
 
         <div class="menu">
             <ul>
-                <li><a href="">Novo</a></li>
+                <li><a href="{{ route('produto.index') }}">Voltar</a></li>
                 <li><a href="">Consulta</a></li>
             </ul>
         </div>
@@ -26,10 +26,10 @@
                     <input type="text" name="nome" value="" id="" placeholder="Nome" class="borda-preta">
                     
 
-                    <input type="text" name="descricao" value="" id="" placeholder="Site" class="borda-preta">
+                    <input type="text" name="descricao" value="" id="" placeholder="Descricao" class="borda-preta">
                     
 
-                    <input type="text" name="peso" value="" id="" placeholder="UF" class="borda-preta">
+                    <input type="text" name="peso" value="" id="" placeholder="Peso" class="borda-preta">
                     
 
                    <select name="unidade_id" >

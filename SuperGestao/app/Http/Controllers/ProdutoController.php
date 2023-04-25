@@ -41,19 +41,19 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
-        //Produto::create($request->all());
+        Produto::create($request->all());
 
-        $produto = new Produto();
-        $nome = $request->get('nome');
-        $descricao = $request->get('descricao');
+        //$produto = new Produto();
+        //$nome = $request->get('nome');
+        //$descricao = $request->get('descricao');
 
-        $nome = strtoupper($nome);
+        //$nome = strtoupper($nome);
 
-        $produto->nome = $nome;
-        $produto->nome = $descricao;
+        //$produto->nome = $nome;
+        //$produto->nome = $descricao;
 
-        $produto->save();
-        
+        //$produto->save();
+
         redirect()->route('produto.index');
     }
 

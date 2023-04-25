@@ -54,7 +54,7 @@ class ProdutoController extends Controller
 
         //$produto->save();
 
-        redirect()->route('produto.index');
+        return redirect()->route('produto.index');
     }
 
     /**

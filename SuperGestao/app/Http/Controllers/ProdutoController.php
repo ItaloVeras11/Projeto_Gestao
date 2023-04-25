@@ -46,6 +46,8 @@ class ProdutoController extends Controller
         $produto = new Produto();
         $nome = $request->get('nome');
         $descricao = $request->get('descricao');
+
+        $nome = strtoupper($nome);
         redirect()->route('produto.index');
     }
 

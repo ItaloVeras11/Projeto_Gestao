@@ -15,7 +15,7 @@ class ProdutoController extends Controller
      */
     public function index(Request $request)
     {
-        $unidades = Unidade::all();
+        
         $produtos = Produto::paginate(10);
 
     
@@ -29,6 +29,7 @@ class ProdutoController extends Controller
      */
     public function create()
     {
+        $unidades = Unidade::all();
         return view('app.produto.create');
     }
 

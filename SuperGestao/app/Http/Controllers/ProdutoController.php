@@ -51,6 +51,9 @@ class ProdutoController extends Controller
 
         $produto->nome = $nome;
         $produto->nome = $descricao;
+
+        $produto->save();
+        
         redirect()->route('produto.index');
     }
 

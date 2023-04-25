@@ -36,7 +36,10 @@
 
                         <option>-- Selecione Unidade de Medida --</option>
 
+                        @foreach ($unidades as $unidade)
                         <option value="1"> Unidade </option>
+                        @endforeach
+                        
 
                    </select>
                     

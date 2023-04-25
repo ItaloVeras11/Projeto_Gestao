@@ -30,7 +30,7 @@ class ProdutoController extends Controller
     public function create()
     {
         $unidades = Unidade::all();
-        return view('app.produto.create');
+        return view('app.produto.create', ['unidades' => $unidades]);
     }
 
     /**

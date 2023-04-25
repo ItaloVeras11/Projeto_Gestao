@@ -50,6 +50,7 @@ class ProdutoController extends Controller
         $nome = strtoupper($nome);
 
         $produto->nome = $nome;
+        $produto->nome = $descricao;
         redirect()->route('produto.index');
     }
 

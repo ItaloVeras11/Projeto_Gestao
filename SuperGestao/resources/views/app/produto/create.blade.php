@@ -37,7 +37,7 @@
                         <option>-- Selecione Unidade de Medida --</option>
 
                         @foreach ($unidades as $unidade)
-                        <option value="1"> Unidade </option>
+                        <option value="{{ $unidade->id }}"> {{$unidade->descricao}} </option>
                         @endforeach
                         
 

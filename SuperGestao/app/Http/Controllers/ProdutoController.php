@@ -43,8 +43,8 @@ class ProdutoController extends Controller
     {
         $regras = [
             'nome' => 'required|min:3|max:40',
-            'descricao' => '',
-            'peso' => '',
+            'descricao' => 'required|min:3|max:200',
+            'peso' => 'required|integer',
             'unidade_id' => '',
         ];
 

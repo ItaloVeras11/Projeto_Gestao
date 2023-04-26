@@ -41,6 +41,7 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
+        $regras = [];
         Produto::create($request->all());
 
         //$produto = new Produto();

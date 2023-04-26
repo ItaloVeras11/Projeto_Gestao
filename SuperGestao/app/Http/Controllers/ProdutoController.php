@@ -45,7 +45,7 @@ class ProdutoController extends Controller
             'nome' => '',
             'descricao' => '',
             'peso' => '',
-            'nome' => '',
+            'unidade_id' => '',
         ];
 
         $feedback = [

@@ -42,7 +42,7 @@ class ProdutoController extends Controller
     public function store(Request $request)
     {
         $regras = [
-            'nome' => '',
+            'nome' => 'required|min:3|max:40',
             'descricao' => '',
             'peso' => '',
             'unidade_id' => '',

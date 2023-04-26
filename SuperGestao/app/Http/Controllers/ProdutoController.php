@@ -45,7 +45,7 @@ class ProdutoController extends Controller
             'nome' => 'required|min:3|max:40',
             'descricao' => 'required|min:3|max:200',
             'peso' => 'required|integer',
-            'unidade_id' => '',
+            'unidade_id' => 'exists:unidades,id ',
         ];
 
         $feedback = [

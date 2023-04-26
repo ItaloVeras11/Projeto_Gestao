@@ -42,7 +42,10 @@ class ProdutoController extends Controller
     public function store(Request $request)
     {
         $regras = [
-
+            'nome' => '',
+            'descricao' => '',
+            'peso' => '',
+            'nome' => '',
         ];
 
         $feedback = [

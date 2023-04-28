@@ -49,6 +49,7 @@ class ProdutoController extends Controller
         ];
 
         $feedback = [
+            'required' => 'O campo :attribute deve ser preenchido'
 
         ];
 

@@ -42,6 +42,7 @@
                         
 
                    </select>
+                   {{ $errors->has('unidade_id') ? $errors->first('unidade_id') : '' }}
                     
 
                     <button type="submit" class="borda-preta">Cadastrar</button>

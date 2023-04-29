@@ -24,7 +24,7 @@
                     
                     @csrf
                     <input type="text" name="nome" value="" id="" placeholder="Nome" class="borda-preta">
-                    
+                    {{ $errors->has('') ? $errors->first('nome') : '' }}
 
                     <input type="text" name="descricao" value="" id="" placeholder="Descricao" class="borda-preta">
                     

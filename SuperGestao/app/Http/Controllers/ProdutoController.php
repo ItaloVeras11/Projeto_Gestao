@@ -59,6 +59,8 @@ class ProdutoController extends Controller
 
         ];
 
+        $request->validate($regras, $feedback);
+
 
         Produto::create($request->all());
 

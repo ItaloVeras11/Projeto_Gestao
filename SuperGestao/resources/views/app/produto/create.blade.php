@@ -24,13 +24,13 @@
                     
                     @csrf
                     <input type="text" name="nome" value="" id="" placeholder="Nome" class="borda-preta">
-                    {{ $errors->has('') ? $errors->first('nome') : '' }}
+                    {{ $errors->has('nome') ? $errors->first('nome') : '' }}
 
                     <input type="text" name="descricao" value="" id="" placeholder="Descricao" class="borda-preta">
-                    
+                    {{ $errors->has('descricao') ? $errors->first('descricao') : '' }}
 
                     <input type="text" name="peso" value="" id="" placeholder="Peso" class="borda-preta">
-                    
+                    {{ $errors->has('peso') ? $errors->first('peso') : '' }}
 
                    <select name="unidade_id" >
 

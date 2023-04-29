@@ -37,7 +37,7 @@
                         <option>-- Selecione Unidade de Medida --</option>
 
                         @foreach ($unidades as $unidade)
-                        <option value="{{ $unidade->id }}"> {{$unidade->descricao}} </option>
+                        <option value="{{ $unidade->id }}"  {{ old('unidade_id') == $unidade->id ? 'selected' : '' }}  > {{$unidade->descricao}} </option>
                         @endforeach
                         
 

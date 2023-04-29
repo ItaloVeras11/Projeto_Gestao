@@ -52,6 +52,8 @@ class ProdutoController extends Controller
             'required' => 'O campo :attribute deve ser preenchido',
             'nome.min' => 'O campo nome deve ter no minimo 3 caracteres',
             'nome.max' => 'O campo nome deve ter no maximo 40 caracteres',
+            'descricao.min' => 'O campo descrição deve ter no minimo 3 caracteres',
+            'descricao.max' => 'O campo descrição deve ter no maximo 40 caracteres',
 
         ];
 

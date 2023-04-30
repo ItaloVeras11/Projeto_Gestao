@@ -42,7 +42,7 @@
                             <td>{{ $produto->peso }}</td>
                             <td>{{ $produto->unidade_id }}</td>
                             <td><a href=""> Excluir </a></td>
-                            <td><a href="{{ route('app.fornecedor.editar', $fornecedor->id) }}"> Editar</a></td>
+                            <td><a href=""> Editar</a></td>
                         </tr>
                         @endforeach
                     </tbody>

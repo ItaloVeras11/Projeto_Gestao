@@ -86,7 +86,7 @@ class ProdutoController extends Controller
      */
     public function show(Produto $produto)
     {
-        //
+        dd($produto);
     }
 
     /**

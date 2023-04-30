@@ -26,11 +26,15 @@
                         <td>{{ $produto->id }}</td>
                     </tr>
                     <tr>
-                        <td>ID:</td>
-                        <td>{{ $produto->id }}</td>
+                        <td>Nome:</td>
+                        <td>{{ $produto->nome }}</td>
                     </tr>
                     <tr>
-                        <td>ID:</td>
+                        <td>Descrição:</td>
+                        <td>{{ $produto->descricao }}</td>
+                    </tr>
+                    <tr>
+                        <td>Peso:</td>
                         <td>{{ $produto->id }}</td>
                     </tr>
 

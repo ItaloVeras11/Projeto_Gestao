@@ -35,7 +35,11 @@
                     </tr>
                     <tr>
                         <td>Peso:</td>
-                        <td>{{ $produto->id }}</td>
+                        <td>{{ $produto->peso }}</td>
+                    </tr>
+                    <tr>
+                        <td>Unidade De Medida:</td>
+                        <td>{{ $produto->unidade_id }}</td>
                     </tr>
 
                     

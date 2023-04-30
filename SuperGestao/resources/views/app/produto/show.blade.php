@@ -20,11 +20,10 @@
             
 
             <div style="width: 30%; margin-left: auto; margin-right: auto;">
-                <table border="">
+                <table border="1">
                     <tr>
-                        <td>
-
-                        </td>
+                        <td>ID:</td>
+                        <td>{{ $produto->id }}</td>
                     </tr>
                 </table>
             </div>

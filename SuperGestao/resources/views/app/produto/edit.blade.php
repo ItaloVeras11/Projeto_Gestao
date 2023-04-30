@@ -6,7 +6,7 @@
     <div class="conteudo-pagina">
 
         <div class="titulo-pagina-2">
-            <p>Adicionar Produto</p>
+            <p>Editar Produto</p>
         </div>
 
         <div class="menu">
@@ -20,7 +20,7 @@
             
 
             <div style="width: 30%; margin-left: auto; margin-right: auto;">
-                <form action="{{ route('produto.store') }}" method="post">
+                <form action="" method="post">
                     
                     @csrf
                     <input type="text" name="nome" value="{{ old('nome') }}" id="" placeholder="Nome" class="borda-preta">

@@ -25,6 +25,16 @@
                         <td>ID:</td>
                         <td>{{ $produto->id }}</td>
                     </tr>
+                    <tr>
+                        <td>ID:</td>
+                        <td>{{ $produto->id }}</td>
+                    </tr>
+                    <tr>
+                        <td>ID:</td>
+                        <td>{{ $produto->id }}</td>
+                    </tr>
+
+                    
                 </table>
             </div>
 

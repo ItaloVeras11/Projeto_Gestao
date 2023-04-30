@@ -20,8 +20,12 @@
             
 
             <div style="width: 30%; margin-left: auto; margin-right: auto;">
-                <table>
-                    
+                <table border="">
+                    <tr>
+                        <td>
+
+                        </td>
+                    </tr>
                 </table>
             </div>
 

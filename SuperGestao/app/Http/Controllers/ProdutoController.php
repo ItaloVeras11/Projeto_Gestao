@@ -113,6 +113,9 @@ class ProdutoController extends Controller
     {
         print_r($request->all());
         print_r($produto->getAttributes());
+
+        $produto->update($request->all());
+        return redirect()->route('produto.show', ['produto' => $produto->id ]);
     }
 
     /**

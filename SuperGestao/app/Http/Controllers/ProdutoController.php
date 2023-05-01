@@ -111,7 +111,8 @@ class ProdutoController extends Controller
      */
     public function update(Request $request, Produto $produto)
     {
-        //
+        print_r($request->all());
+        print_r($produto->getAttributes());
     }
 
     /**

@@ -46,7 +46,8 @@
                                 <form action="{{ route('produto.destroy', ['produto' => $produto->id]) }}" method="post">
                                     @method('DELETE')
                                     @csrf
-                                    <a href=""> Excluir </a>
+                                    <button type="submite">Excluir</button>
+                                    <!--<a href=""> Excluir </a>-->
                                 </form>
                             </td>
                             <td><a href=""> Editar</a></td>

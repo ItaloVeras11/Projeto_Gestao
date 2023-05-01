@@ -43,8 +43,11 @@
                             <td>{{ $produto->unidade_id }}</td>
                             <td><a href="{{ route('produto.show', ['produto' => $produto->id])}}"> Excluir </a></td>
                             <td>
-                                <form action="{{ route('produto.destroy', ['produto' => $produto->id]) }}" method="post"></form>
-                                <a href=""> Excluir </a>
+                                <form action="{{ route('produto.destroy', ['produto' => $produto->id]) }}" method="post">
+                                    @method('DELETE')
+                                    @csrf
+                                    <a href=""> Excluir </a>
+                                </form>
                             </td>
                             <td><a href=""> Editar</a></td>
                         </tr>

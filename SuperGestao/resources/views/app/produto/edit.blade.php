@@ -20,9 +20,10 @@
             
 
             <div style="width: 30%; margin-left: auto; margin-right: auto;">
-                <form action="" method="post">
+                <form action="{{ route('produto.update', ['produto' = $produto->id]) }}" method="post">
                     
                     @csrf
+                    @method()
                     <input type="text" name="nome" value="{{ $produto->nome ?? old('nome') }}" id="" placeholder="Nome" class="borda-preta">
                     {{ $errors->has('nome') ? $errors->first('nome') : '' }}
 

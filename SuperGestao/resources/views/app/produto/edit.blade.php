@@ -23,7 +23,7 @@
                 <form action="{{ route('produto.update', ['produto' = $produto->id]) }}" method="post">
                     
                     @csrf
-                    @method()
+                    @method('PUT')
                     <input type="text" name="nome" value="{{ $produto->nome ?? old('nome') }}" id="" placeholder="Nome" class="borda-preta">
                     {{ $errors->has('nome') ? $errors->first('nome') : '' }}
 

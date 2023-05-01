@@ -43,11 +43,11 @@
                             <td>{{ $produto->unidade_id }}</td>
                             <td><a href="{{ route('produto.show', ['produto' => $produto->id])}}"> Excluir </a></td>
                             <td>
-                                <form action="{{ route('produto.destroy', ['produto' => $produto->id]) }}" method="post">
+                                <form id="form_{{$produto->id}}" action="{{ route('produto.destroy', ['produto' => $produto->id]) }}" method="post">
                                     @method('DELETE')
                                     @csrf
-                                    <button type="submite">Excluir</button>
-                                    <!--<a href=""> Excluir </a>-->
+                                    <!--<button type="submite">Excluir</button>-->
+                                    <a href="#" onclick="document.getElementById('form_{{$produto->id}}').submit()"> Excluir </a>
                                 </form>
                             </td>
                             <td><a href=""> Editar</a></td>

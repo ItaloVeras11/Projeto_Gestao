@@ -6,10 +6,13 @@
     <div class="conteudo-pagina">
 
         <div class="titulo-pagina-2">
-            @if ($produto->id)
-                
-            @endif
+            @if (isset($produto->id))
+                <p>Editar Produto</p>
+            @else
+
             <p>Adicionar Produto</p>
+
+            @endif
         </div>
 
         <div class="menu">

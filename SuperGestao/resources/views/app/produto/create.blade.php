@@ -43,7 +43,7 @@
                     @csrf
 
                 @endif
-                    <input type="text" name="nome" value="{{  old('nome') }}" id="" placeholder="Nome" class="borda-preta">
+                    <input type="text" name="nome" value="{{ $produto->nome ?? old('nome') }}" id="" placeholder="Nome" class="borda-preta">
                     {{ $errors->has('nome') ? $errors->first('nome') : '' }}
 
                     <input type="text" name="descricao" value="{{ old('descricao') }}" id="" placeholder="Descricao" class="borda-preta">

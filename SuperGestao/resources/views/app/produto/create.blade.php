@@ -25,11 +25,25 @@
         <div class="informacao-pagina">
             
 
+
             <div style="width: 30%; margin-left: auto; margin-right: auto;">
+
+                @if (isset($produto->id))
+
+                <form action="{{ route('produto.update') }}" method="post"> 
+                    @csrf
+                    @method('PUT')
+                    
+                @else
+                    
+                
+
                 <form action="{{ route('produto.store') }}" method="post">
                     
                     @csrf
-                    <input type="text" name="nome" value="{{ old('nome') }}" id="" placeholder="Nome" class="borda-preta">
+
+                @endif
+                    <input type="text" name="nome" value="{{  old('nome') }}" id="" placeholder="Nome" class="borda-preta">
                     {{ $errors->has('nome') ? $errors->first('nome') : '' }}
 
                     <input type="text" name="descricao" value="{{ old('descricao') }}" id="" placeholder="Descricao" class="borda-preta">

@@ -7,7 +7,7 @@
 
         @csrf   
 @endif
-<input type="text" name="nome" value="{{ $produto_detalhe->nome ?? old('nome') }}" id="" placeholder="Nome"
+<input type="text" name="produto_id" value="{{ $produto_detalhe->produto_id ?? old('produto_id') }}" id="" placeholder="ID do Produto"
     class="borda-preta">
 {{ $errors->has('nome') ? $errors->first('nome') : '' }}
 

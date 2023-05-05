@@ -23,7 +23,7 @@ class ProdutoDetalheController extends Controller
      */
     public function create()
     {
-        echo 'Chegamos até aqui';
+       return view('app.produto_detalhe.create');
     }
 
     /**
